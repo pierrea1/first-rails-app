@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_16_123405) do
+ActiveRecord::Schema.define(version: 2020_09_16_123911) do
 
 # Could not dump table "restaurants" because of following StandardError
 #   Unknown type '' for column 'stars'
