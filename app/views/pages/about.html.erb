@@ -1,0 +1,22 @@
+<h1>Welcome to Tactix</h1>
+
+<p>Now is
+  <%= Time.now%>
+</p>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Contact', root_path %>
+
+<form action="/about" method="get">
+  <input type="text" name="member" value="<%= params[:member] %> is cool ? "  placeholder="Who are you looking for ?">
+  <input type="submit">
+</form
+
+<h2>
+  <%= @members_selected[0] %>
+</h2>
