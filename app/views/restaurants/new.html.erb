@@ -1,0 +1,19 @@
+
+
+<p>Wanna create a restaurant ? Tell us : </p>
+
+<!-- <form action="/restaurants" method="post">
+  <input type="text" name="restaurant[name]" placeholder="Name">
+  <input type="number" name="restaurant[stars]" placeholder="Stars">
+  <input type="text" name="restaurant[address]" placeholder="Address">
+  <input type="submit" value="Create restaurant"=>
+</form> -->
+
+<%= form_for @restaurant do |f| %>
+  <%= f.label :name, "Enter a name" %>
+  <%= f.text_field :name %>
+
+  <%= f.number_field :stars %>
+  <%= f.text_field :address %>
+  <%= f.submit %>
+<% end %>

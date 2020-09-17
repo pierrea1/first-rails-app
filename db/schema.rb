@@ -12,7 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2020_09_16_123911) do
 
-# Could not dump table "restaurants" because of following StandardError
-#   Unknown type '' for column 'stars'
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name"
+    t.integer "stars"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "address"
+  end
 
 end
